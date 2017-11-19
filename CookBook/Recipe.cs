@@ -41,7 +41,7 @@ namespace CookBook
             }
         }
 
-        public FoodCategory FoodCategory
+         public FoodCategory FoodCategory
         {
             get { return foodCategory; }
             set { foodCategory = value; }
