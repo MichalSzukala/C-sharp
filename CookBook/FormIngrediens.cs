@@ -166,28 +166,7 @@ namespace CookBook
 
         }
 
-        //after clicking on the ListBox with recipes, the details will be shown in the input fields
-        private void listBoxListOfIngrediens_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int selectedIndex = listBoxListOfIngrediens.SelectedIndex;
-
-            if (selectedIndex != -1)
-            {
-                textBoxPutIngredient.Text = ingredientsArray[selectedIndex];
-            }
-
-        }
-
-        ////will unselect selected ingredient
-        private void buttonUnselect_Click(object sender, EventArgs e)
-        {
-            int selectedIndex = listBoxListOfIngrediens.SelectedIndex;
-
-            if (selectedIndex != -1)
-            {
-                listBoxListOfIngrediens.ClearSelected();
-                textBoxPutIngredient.Text = string.Empty;
-            }
-        }
+        
+        
     }
 }
