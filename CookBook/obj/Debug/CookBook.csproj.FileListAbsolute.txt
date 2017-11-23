@@ -31,14 +31,14 @@ C:\Users\Z\Desktop\FUCK\dupa\CookBook\obj\Debug\CookBook.csproj.GenerateResource
 C:\Users\Z\Desktop\FUCK\dupa\CookBook\obj\Debug\CookBook.csproj.CoreCompileInputs.cache
 C:\Users\Z\Desktop\FUCK\dupa\CookBook\obj\Debug\CookBook.exe
 C:\Users\Z\Desktop\FUCK\dupa\CookBook\obj\Debug\CookBook.pdb
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\bin\Debug\CookBook.exe.config
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\bin\Debug\CookBook.exe
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\bin\Debug\CookBook.pdb
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.csprojResolveAssemblyReference.cache
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.FormIngrediens.resources
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.FormMain.resources
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.Properties.Resources.resources
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.csproj.GenerateResource.Cache
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.csproj.CoreCompileInputs.cache
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.exe
-C:\Users\Z\Desktop\GitHub\Recipe-Book\CookBook\obj\Debug\CookBook.pdb
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\bin\Debug\CookBook.exe.config
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\bin\Debug\CookBook.exe
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\bin\Debug\CookBook.pdb
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.csprojResolveAssemblyReference.cache
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.FormIngrediens.resources
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.FormMain.resources
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.Properties.Resources.resources
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.csproj.GenerateResource.Cache
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.csproj.CoreCompileInputs.cache
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.exe
+C:\Users\Z\Desktop\Przedmioty\Projekty\Cook Book\CookBook\obj\Debug\CookBook.pdb
