@@ -135,7 +135,7 @@
             // 
             this.labelNoOFIngred.AutoSize = true;
             this.labelNoOFIngred.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoOFIngred.Location = new System.Drawing.Point(640, 45);
+            this.labelNoOFIngred.Location = new System.Drawing.Point(665, 45);
             this.labelNoOFIngred.Name = "labelNoOFIngred";
             this.labelNoOFIngred.Size = new System.Drawing.Size(116, 18);
             this.labelNoOFIngred.TabIndex = 2;
@@ -163,12 +163,12 @@
             // 
             // listBoxRecipes
             // 
-            this.listBoxRecipes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxRecipes.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxRecipes.FormattingEnabled = true;
-            this.listBoxRecipes.ItemHeight = 18;
+            this.listBoxRecipes.ItemHeight = 17;
             this.listBoxRecipes.Location = new System.Drawing.Point(488, 82);
             this.listBoxRecipes.Name = "listBoxRecipes";
-            this.listBoxRecipes.Size = new System.Drawing.Size(671, 328);
+            this.listBoxRecipes.Size = new System.Drawing.Size(671, 327);
             this.listBoxRecipes.TabIndex = 5;
             this.listBoxRecipes.SelectedIndexChanged += new System.EventHandler(this.listBoxRecipes_SelectedIndexChanged);
             // 

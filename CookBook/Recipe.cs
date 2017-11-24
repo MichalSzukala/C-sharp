@@ -132,7 +132,7 @@ namespace CookBook
             if (string.IsNullOrEmpty(descriptionText))
                 descriptionText = "No description";
 
-            string textOut = string.Format("{0, -45} {1,-50} {2, -30} {3, -25}", recipeName, GetCurrentNumOfIngrediens(), foodCategory.ToString(), descriptionText);
+            string textOut = string.Format("{0, -25} {1,-17} {2, -15} {3, -25}", recipeName, GetCurrentNumOfIngrediens(), foodCategory.ToString(), descriptionText);
             return textOut;
         }
     }
