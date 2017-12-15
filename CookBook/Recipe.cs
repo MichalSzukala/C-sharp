@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Michal Szukala
+//2017.11.12
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -132,7 +136,7 @@ namespace CookBook
             if (string.IsNullOrEmpty(descriptionText))
                 descriptionText = "No description";
 
-            string textOut = string.Format("{0, -25} {1,-17} {2, -15} {3, -25}", recipeName, GetCurrentNumOfIngrediens(), foodCategory.ToString(), descriptionText);
+            string textOut = string.Format("{0, -20} {1,-17} {2, -14} {3, -15}", recipeName, GetCurrentNumOfIngrediens(), foodCategory.ToString(), descriptionText);
             return textOut;
         }
     }

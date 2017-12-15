@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Michal Szukala
+//2017.11.12
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

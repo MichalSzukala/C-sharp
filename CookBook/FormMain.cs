@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Michal Szukala
+//2017.11.12
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -81,7 +85,7 @@ namespace CookBook
         {
             if (!CheckInput())
                 return;
-            
+
             currRecipe.FoodCategory = (FoodCategory)comboBoxCategory.SelectedIndex;
             currRecipe.RecipeName = textBoxNameOfRecipe.Text.Trim();
             currRecipe.Description = textBoxRecipe.Text.Trim();
@@ -93,15 +97,15 @@ namespace CookBook
             InitializeGUI();
         }
 
-        //will print every recipes stored in Recipes array
+        //will print every recipes stored in Recipes array 
         private void printAllRecipes()
         {
-            Recipe[] recipeList = recipeMngr.RecipeList;
+            int numberOfItems = recipeMngr.CurrentNumOfItems();
+
             listBoxRecipes.Items.Clear();
-            for (int i = 0; i < recipeList.Length; i++)
+            for (int i = 0; i < numberOfItems; i++)
             {
-                if (recipeList[i] != null)
-                    listBoxRecipes.Items.Add(recipeList[i].ToString());
+                    listBoxRecipes.Items.Add(recipeMngr.GetRecipeAt(i).ToString());
             }
         }
 
@@ -114,7 +118,7 @@ namespace CookBook
             
             if (selectedIndex >= 0)
             {   
-                Recipe editingRecipe = recipeMngr.RecipeList[selectedIndex];
+                Recipe editingRecipe = recipeMngr.GetRecipeAt(selectedIndex);
                 dlg.showIngredients(editingRecipe);
             }
             DialogResult dlgResult = dlg.ShowDialog();
@@ -129,9 +133,9 @@ namespace CookBook
 
             if (selectedIndex != -1)
             {
-                textBoxNameOfRecipe.Text = recipeMngr.RecipeList[selectedIndex].RecipeName;
-                textBoxRecipe.Text = recipeMngr.RecipeList[selectedIndex].Description;
-                comboBoxCategory.SelectedIndex = (int)recipeMngr.RecipeList[selectedIndex].FoodCategory;
+                textBoxNameOfRecipe.Text = recipeMngr.GetRecipeAt(selectedIndex).RecipeName;
+                textBoxRecipe.Text = recipeMngr.GetRecipeAt(selectedIndex).Description;
+                comboBoxCategory.SelectedIndex = (int)recipeMngr.GetRecipeAt(selectedIndex).FoodCategory;
             }
         }
 
@@ -142,42 +146,26 @@ namespace CookBook
             if (!CheckInput())
                 return;
             int selectedIndex = listBoxRecipes.SelectedIndex;
+            if (selectedIndex != -1)
+            {
+                FoodCategory foodCategory = (FoodCategory)comboBoxCategory.SelectedIndex;
+                string recipeName = textBoxNameOfRecipe.Text.Trim();
+                string description = textBoxRecipe.Text.Trim();
 
-            currRecipe.FoodCategory = (FoodCategory)comboBoxCategory.SelectedIndex;
-            currRecipe.RecipeName = textBoxNameOfRecipe.Text.Trim();
-            currRecipe.Description = textBoxRecipe.Text.Trim();
-            currRecipe.IngredientsArray = recipeMngr.RecipeList[selectedIndex].IngredientsArray;
-
-            recipeMngr.Add(currRecipe, selectedIndex);
-            printAllRecipes();
-            currRecipe = new Recipe(numOfIngrediens);
-            currRecipe.DefaultValues();
-            InitializeGUI();
+                recipeMngr.EditItem(selectedIndex, numOfIngrediens, foodCategory, recipeName, description);
+                printAllRecipes();
+                InitializeGUI();
+            }
         }
 
         //after clicking "Delete" button recipe will be deleted and all the recipes on the right in the array will be moved one place left
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
             int selectedIndex = listBoxRecipes.SelectedIndex;
 
             if (selectedIndex != -1)
             {
-                recipeMngr.RecipeList[selectedIndex] = null;
-
-                while (selectedIndex < maxNumOfElements)
-                {
-                    if (selectedIndex + 1 < maxNumOfElements && recipeMngr.RecipeList[selectedIndex + 1] != null)
-                    {
-                        recipeMngr.RecipeList[selectedIndex] = recipeMngr.RecipeList[selectedIndex + 1];
-                        recipeMngr.RecipeList[selectedIndex + 1] = null;
-                    }
-                    else
-                        break;
-
-                    selectedIndex++;
-                }
-
+                recipeMngr.DeleteItem(selectedIndex, maxNumOfElements);
                 printAllRecipes();
                 InitializeGUI();
             }
