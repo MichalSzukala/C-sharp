@@ -1,0 +1,11 @@
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\bin\Release\CookBook.exe.config
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\bin\Release\CookBook.exe
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\bin\Release\CookBook.pdb
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.csprojResolveAssemblyReference.cache
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.FormIngrediens.resources
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.FormMain.resources
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.Properties.Resources.resources
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.csproj.GenerateResource.Cache
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.csproj.CoreCompileInputs.cache
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.exe
+C:\Users\Z\Desktop\GitHub\mishmash\CookBook\obj\Release\CookBook.pdb
